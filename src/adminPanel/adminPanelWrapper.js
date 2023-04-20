@@ -45,7 +45,7 @@ const AdminPanelWrapper = styled.div`
 }
     .rightSide{
         transition: 0.4s;
-        background-color: #f2f2f2;
+        background-color: #F0F2F5;
             .header{
                 width: 100%;
                 background-color: rgba(255, 255, 255, 0.356) !important;
