@@ -40,5 +40,10 @@ const HomeWrapper = styled.div`
 .cursor-pointer{
     cursor: pointer;
 }
+.notification{
+    position: relative;
+    right: 0px;
+    top: 100px;
+}
 `
 export default HomeWrapper;

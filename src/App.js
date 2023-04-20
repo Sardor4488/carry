@@ -7,6 +7,7 @@ import SignUpDriver from './carry/signUp/signUpDriver';
 import SignUpMerchant from './carry/signUp/signUpMerchant';
 import SignIn from './carry/signIn/signIn';
 import User from './carry/user';
+import AdminPanel from './adminPanel/adminPanel';
  
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/sign-up-merchant' element={<SignUpMerchant/>} />
         <Route path='/sign-in' element={<SignIn/>} />
         <Route path='/user' element={<User/>} />
+        <Route path='/admin' element={<AdminPanel/>} />
       </Routes>
     </div>
   );
