@@ -6,6 +6,7 @@ import Dashboard from './pages/dashboard/dashboard'
 import Billing from './pages/billing/billing'
 import Notifications from './pages/notifications/notifications'
 import Tables from './pages/tables/tables'
+import Profil from './pages/profil/profil'
 const AdminPanel = () => {
     const [hideSidebar, setHidebar] = useState(false)
     const hidenSidebar = () => {
@@ -34,6 +35,9 @@ const AdminPanel = () => {
                                 <li onClick={() => setPathMenu("table")} className={`py-2 text-start c_pointer ps-2 ${pathMenu === "table" ? "active_menu" : ""}`}>
                                     <FontAwesomeIcon icon={faTable} /> Tables
                                 </li>
+                                <li onClick={() => setPathMenu("profil")} className={`py-2 text-start c_pointer ps-2 ${pathMenu === "profil" ? "active_menu" : ""}`}>
+                                    <FontAwesomeIcon icon={faUser} /> Profil
+                                </li>
                                 <li onClick={() => setPathMenu("notifications")} className={`py-2 text-start c_pointer ps-2 ${pathMenu === "notifications" ? "active_menu" : ""}`}>
                                     <FontAwesomeIcon icon={faBell} /> Notifications
                                 </li>
@@ -61,6 +65,7 @@ const AdminPanel = () => {
                     {pathMenu === "billing" && <Billing/>}
                     {pathMenu === "table" && <Tables/>}
                     {pathMenu === "notifications" && <Notifications/>}
+                    {pathMenu === "profil" && <Profil/>}
                 </div>
             </div>
         </AdminPanelWrapper>

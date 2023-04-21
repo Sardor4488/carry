@@ -49,5 +49,32 @@ const BillingWrapper = styled.div`
         /* color: #F0F2F5; */
     }
 }
+.credit_card{
+    width: 100%;
+    height: 240px;
+    background-image: url(https://wallpaper-house.com/data/out/10/wallpaper2you_401296.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    /* display: flex; */
+    /* align-items:fl; */
+}
+.credit_card_type{
+    width: 50px;
+}
+.informations_credit_card{
+    margin-top: 100px;
+}
+.invoices_list{
+    background-color: #fff;
+    border-radius: 10px;
+}
+.text-secondary-card{
+    color: rgb(226, 226, 226);
+    font-size: 13px;
+}
+.credit_card_info{
+    font-size: 18px;
+}
 `
 export default BillingWrapper;
