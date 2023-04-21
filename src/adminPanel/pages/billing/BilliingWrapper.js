@@ -49,7 +49,14 @@ const BillingWrapper = styled.div`
         /* color: #F0F2F5; */
     }
 }
+.credit_card_type_mini{
+    width: 30px;
+}
+.my_credit_card {
+    border-radius: 10px;
+}
 .credit_card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem, rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem; 
     width: 100%;
     height: 240px;
     background-image: url(https://wallpaper-house.com/data/out/10/wallpaper2you_401296.jpg);
@@ -68,6 +75,18 @@ const BillingWrapper = styled.div`
 .invoices_list{
     background-color: #fff;
     border-radius: 10px;
+    min-height: 675px !important;
+    overflow-y:  scroll;
+    box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem, rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem; 
+
+
+}
+.payment_method{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem, rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem; 
+
 }
 .text-secondary-card{
     color: rgb(226, 226, 226);

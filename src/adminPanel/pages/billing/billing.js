@@ -8,7 +8,7 @@ import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
 const Billing = () => {
   return (
     <BillingWrapper>
-      <div className='p-3 billing'>
+      <div className='p-3 billing pb-5'>
         <div className="row py-3">
           <div className="col-7">
             <div className="credit_card text-start text-white p-4">
@@ -31,35 +31,59 @@ const Billing = () => {
                 <img src="https://demos.creative-tim.com/material-dashboard-react/static/media/mastercard.27fca3e7637a9458fb64.png" className='credit_card_type' alt="" />
               </div>
             </div>
+
+            <div className='payment_method p-3 mt-3 '>
+              <div className='d-flex align-items-center justify-content-between mb-3'>
+                <h5 className="text-secondary">Payment method</h5>
+                <Button color='dark'>+ Add new card</Button>
+              </div>
+
+              <div className='my_credit_card p-3 mb-3 border d-flex align-items-center justify-content-between'>
+                <div className='d-flex align-items-center'>
+                  <img className='credit_card_type_mini' src="https://demos.creative-tim.com/material-dashboard-react/static/media/mastercard.27fca3e7637a9458fb64.png" alt="" />
+                  <span className='h5 text-secondary mb-0 ms-1'>**** **** **** 4771</span>
+                </div>
+                <FontAwesomeIcon className='h5 text-secondary c_pointer' icon={faEdit} />
+              </div>
+              <div className='my_credit_card p-3 mb-3 border d-flex align-items-center justify-content-between'>
+                <div className='d-flex align-items-center'>
+                  <img className='credit_card_type_mini' src="https://demos.creative-tim.com/material-dashboard-react/static/media/mastercard.27fca3e7637a9458fb64.png" alt="" />
+                  <span className='h5 text-secondary mb-0 ms-1'>**** **** **** 4771</span>
+                </div>
+                <FontAwesomeIcon className='h5 text-secondary c_pointer' icon={faEdit} />
+              </div>
+            </div>
+
           </div>
+
           <div className="col-5 ">
             <div className='invoices_list p-3'>
               <div className='d-flex align-items-center justify-content-between'>
                 <p className='text-secondary mb-0 fw-bold'>Invoices</p>
-                <Button color='light'>Viev all</Button>
+                <Button color='primary'>Viev all</Button>
               </div>
-              <div className='d-flex text-start align-items-center justify-content-between py-3'>
+              <div className='d-flex text-start align-items-center justify-content-between py-2'>
                 <div>
                   <p className='mb-0 fw-bold text-secondary'>March, 01, 2020</p>
                   <span className='fa-sm text-secondary'>#MS-415646</span>
                 </div>
                 <div className='d-flex text-secondary fw-bold'>
                   <p className='me-3'>$180</p>
-                  <span className='c_pointer'><FontAwesomeIcon icon={faFilePdf}/> PDF</span> 
+                  <span className='c_pointer'><FontAwesomeIcon icon={faFilePdf} /> PDF</span>
                 </div>
               </div>
-              <div className='d-flex text-start align-items-center justify-content-between py-3'>
+              <div className='d-flex text-start align-items-center justify-content-between py-2'>
                 <div>
                   <p className='mb-0 fw-bold text-secondary'>March, 01, 2020</p>
                   <span className='fa-sm text-secondary'>#MS-415646</span>
                 </div>
                 <div className='d-flex text-secondary fw-bold'>
                   <p className='me-3'>$180</p>
-                  <span className='c_pointer'><FontAwesomeIcon icon={faFilePdf}/> PDF</span> 
+                  <span className='c_pointer'><FontAwesomeIcon icon={faFilePdf} /> PDF</span>
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
         <div className="row">
