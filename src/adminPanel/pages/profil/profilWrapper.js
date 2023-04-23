@@ -29,6 +29,17 @@ const ProfilWrapper = styled.div`
     border-radius: 50%;
 
 }
+.img_user_litle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.name_user{
+    font-size: 15px;
+}
+.notifi_user{
+    font-size: 12px;
+}
 .profil_informations{
     border-right: 1px solid rgb(122, 122, 122);
 }
