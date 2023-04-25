@@ -4,7 +4,7 @@ import { Alert } from 'react-bootstrap';
 
 const NotificationBar = () => {
     const [isVisible, setIsVisible] = useState(true);
-    console.log(isVisible);
+
 
     useEffect(() => {
         return () => {
